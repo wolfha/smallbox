@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../src/smallbox.css" />
+<script src="../src/smallbox.js"></script>
+
+<style>
+html, body { 
+  padding: 0px; 
+  margin: 0px; 
+  font-family: "Roboto", sans-serif;
+}
+
+.center {
+  text-align: center;
+}
+</style>
+
+</head>
+<body>
+
+<a href="https://github.com/wolfha/smallbox"><img decoding="async" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_left_darkblue_121621.png?resize=149%2C149" class="attachment-full size-full" alt="Fork me on GitHub" loading="lazy" data-recalc-dims="1"></a>
+
+
+
+
+<div id="mycontent">
+
+  <p>
+   This is some text for this box. The text can contain HTML.
+  </p>
+
+  <p>
+   There is not so much more to say, so please <a href="https://github.com/wolfha/smallbox">check out the github repo</a>.
+  </p>
+
+</div>
+
+
+</div>
+
+
+<div id="morecontent">
+  <div class="center"">
+  <img src="test.jpg" />
+
+  <div style="padding-top: 10px;">
+    Just another example that contains an image.
+  </div>
+
+  </div>
+</div>
+
+
+
+
+<div class="center">
+
+  <h2>SmallBox Demo</h2>
+  <h3>v0.1</h3>
+
+  <button class="open" style="cursor: pointer;">open box 1</button>
+  <br><br />
+  <button class="open_more" style="cursor: pointer;">open box 2</button>
+
+</div>
+
+
+
+<script>
+    var smallbox = new SmallBox();
+        smallbox.add("#mycontent", ".open");
+        smallbox.add("#morecontent", ".open_more");
+</script>
+
+
+</body>
+</html>
