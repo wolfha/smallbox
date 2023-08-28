@@ -1,27 +1,39 @@
 .smallbox-container {
     position: absolute;
-    padding: 20px;
-    padding-top: 10px;
-    top: 50%;
-    left: 50%;
-    min-height: 50px;
-    background-color: #fff;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
     animation: fade 0.5s;
     display: none;
-    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
     z-index: 1000;
 }
 
+.smallbox-display {
+    clear: both;
+    padding: 20px;
+    padding-top: 10px;
+    margin: auto;
+    min-height: 50px;
+    max-width: 400px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.smallbox-inner {
+    max-height: 500px;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+
+.smallbox-display img {
+    max-width: 100%;
+}
+
 .smallbox-overlay {
-    position: absolute;
-    top: 0px;
-    bottom: 0px;
-    right: 0px;
-    left: 0px;
     background-color: rgba(50,50,50,0.8);
-    display: none;
-    z-index: 999;
-    animation: fade 0.5s;
 }
 
 .smallbox-close-container {
